@@ -1,11 +1,4 @@
 export default function handler(req, res) {
-  const auth = req.headers['authorization'] || '';
-  const apiKey = auth.replace('Bearer ', '');
-
-  if (apiKey !== 'dapxz-ai-2913913') {
-    return res.status(401).json({ error: 'Invalid API key' });
-  }
-
   return res.status(200).json({
     id: "chatcmpl-prank",
     object: "chat.completion",
