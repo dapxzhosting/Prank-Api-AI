@@ -31,7 +31,7 @@ dapxz-ai-2913913
 Apapun yang dikirim, hasilnya selalu:
 
 ```json
-         "WKWK KENA PRANK 🤡"
+"WKWK KENA PRANK 🤡"
 ```
 
 ## Cara Pakai
