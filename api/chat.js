@@ -1,6 +1,13 @@
 export default function handler(req, res) {
+  if (req.method !== "POST" || !req.body || !req.body.messages) {
+    return res.status(200).json({
+      status: "ok",
+      message: "API is running"
+    });
+  }
+
   return res.status(200).json({
-    id: "chatcmpl-prank",
+    id: "chatcmpl-" + Date.now(),
     object: "chat.completion",
     choices: [
       {
